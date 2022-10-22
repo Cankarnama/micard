@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
               backgroundImage: AssetImage('image/Dearra.jpg'),
             ),
             Text(
-                'Dearra Taylor',
+                'Wearra Taylor',
 
             style: TextStyle(
               fontWeight: FontWeight.bold,

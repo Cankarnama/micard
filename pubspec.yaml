@@ -57,4 +57,10 @@ flutter:
   assets:
     - image/
 
+  fonts:
+    - family: PlayfairDisplay-
+      fonts:
+        - asset: fonts/PlayfairDisplay-VaraiableFont_wght.ttf
+
+
 
