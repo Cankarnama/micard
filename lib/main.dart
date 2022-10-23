@@ -10,26 +10,35 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.brown[300],
         body: SafeArea(
-            child: Column(
-          children: <Widget>[
-            CircleAvatar(
-              radius: 50,
-              backgroundImage: AssetImage('image/Dearra.jpg'),
-            ),
-            Text(
-                'Wearra Taylor',
+            child: Center(
+          child: Column(
+            children: <Widget>[
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('image/Dearra.jpg'),
+              ),
+              Text(
+                'Dearra Taylor',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                    color: Colors.black,
+                    fontFamily: 'Pacifico'
+                  ),
+              ),
+              Text(
+                'LORVAE',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 35,
+                    color: Colors.black,
+                    fontFamily: 'SourceSansPro'),
+              ),
 
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-              color: Colors.deepOrange
-
-
-            ),
-            )
-          ],
+            ],
+          ),
         )),
       ),
     );

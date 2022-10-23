@@ -58,9 +58,10 @@ flutter:
     - image/
 
   fonts:
-    - family: PlayfairDisplay-
+    - family: Pacifico
       fonts:
-        - asset: fonts/PlayfairDisplay-VaraiableFont_wght.ttf
-
-
+        - asset: fonts/Pacifico-Regular.ttf
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts/SourceSansPro-Regular.ttf
 
