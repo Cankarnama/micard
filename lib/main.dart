@@ -25,8 +25,7 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
                     color: Colors.black,
-                    fontFamily: 'Pacifico'
-                  ),
+                    fontFamily: 'Pacifico'),
               ),
               Text(
                 'LORVAE',
@@ -36,7 +35,54 @@ class MyApp extends StatelessWidget {
                     color: Colors.black,
                     fontFamily: 'SourceSansPro'),
               ),
+              Container(
+                  color: Colors.black,
+                  margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: EdgeInsets.all(20),
+                  //padding: EdgeInsets.,
 
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.phone,
+                        color: Colors.brown[100],
+                        size: 20,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        '+233 504 734 2464',
+                        style:
+                            TextStyle(
+                                color: Colors.brown[100],
+                                fontSize: 15),
+                      ),
+                    ],
+                  )),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                padding: EdgeInsets.all(20),
+                color: Colors.black,
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      color: Colors.brown[100],
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'Karenamarfio@gmail.com',
+                      style: TextStyle(
+                        color: Colors.brown[100],
+                          fontSize: 15
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         )),
