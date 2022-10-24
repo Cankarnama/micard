@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
             child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50,
@@ -31,9 +32,19 @@ class MyApp extends StatelessWidget {
                 'LORVAE',
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 35,
+                    fontSize: 34,
                     color: Colors.black,
                     fontFamily: 'SourceSansPro'),
+              ),
+              SizedBox(
+                height: 10,
+
+                child: Divider(
+                 indent: 80,
+                  endIndent: 80,
+                  thickness: 1,
+                  color: Colors.black,
+                ),
               ),
               Card(
                   color: Colors.black,
@@ -41,7 +52,7 @@ class MyApp extends StatelessWidget {
                   //padding: EdgeInsets.all(10),
 
                   child: Padding(
-                    padding: const EdgeInsets.all(12.0),
+                    padding: const EdgeInsets.all(15.0),
                     child: Row(
                       children: <Widget>[
                         Icon(
@@ -50,12 +61,14 @@ class MyApp extends StatelessWidget {
                           size: 20,
                         ),
                         SizedBox(
-                          width: 10,
+                          width: 30,
                         ),
                         Text(
                           '+233 504 734 2464',
                           style:
-                              TextStyle(color: Colors.brown[100], fontSize: 15),
+                              TextStyle(
+                                  color: Colors.brown[100],
+                                  fontSize: 14),
                         ),
                       ],
                     ),
@@ -70,24 +83,14 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 //padding: EdgeInsets.all(10),
                 color: Colors.black,
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  //here, padding was used as parent because padding is not one of the properties that come with
-                  //the card class.
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
-                        color: Colors.brown[100],
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Karenamarfio@gmail.com',
-                        style: TextStyle(color: Colors.brown[100], fontSize: 15),
-                      )
-                    ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.brown[100],
+                  ),
+                  title: Text(
+                    'Karenamarfio@gmail.com',
+                    style: TextStyle(color: Colors.brown[100], fontSize: 15),
                   ),
                 ),
               )
@@ -155,5 +158,4 @@ width: double.infinity,
                 since its with fills up the who stretch
               */
 ],
-
- */
+*/
